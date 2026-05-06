@@ -3,6 +3,27 @@
 A fully local, private PDF question-answering bot.
 No cloud. No data leaks. Everything runs on your machine.
 
+## Quick Setup (Do this once)
+
+### 1. Install Ollama
+Download from https://ollama.com and install it.
+
+Then pull the required models:
+```bash
+ollama pull llama3
+ollama pull nomic-embed-text
+```
+
+### 2. Install Python dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the app
+```bash
+streamlit run app.py
+```
+
 ##  How to Use
 
 1. **Upload a PDF** using the sidebar

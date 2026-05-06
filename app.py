@@ -3,7 +3,7 @@ import time
 from pdf_loader import load_pdf_chunks, get_pdf_metadata
 from rag_engine import ingest_chunks, query_rag, clear_database, get_indexed_count
 
-# ── Page config ─────────────────────────────────────────────
+# ── Page config 
 st.set_page_config(
     page_title="SecureDoc",
     page_icon="icon.png",
@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ── Custom CSS ───────────────────────────────────────────────
+# ── Custom CSS 
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap');
@@ -146,14 +146,14 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ── Session state ────────────────────────────────────────────
+# ── Session state 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "indexed_files" not in st.session_state:
     st.session_state.indexed_files = []
 
 
-# ── Sidebar ──────────────────────────────────────────────────
+# ── Sidebar 
 with st.sidebar:
     st.markdown("## SecureDoc")
     st.caption("Private QA Bot · 100% Local · Zero Cloud")
@@ -214,7 +214,7 @@ with st.sidebar:
     st.caption("All data stays on your machine.\nNo internet required after setup.")
 
 
-# ── Main Area ────────────────────────────────────────────────
+# ── Main Area 
 st.markdown("# SecureDoc")
 st.markdown("**Ask questions about your private PDF documents. Everything runs locally.**")
 st.divider()
